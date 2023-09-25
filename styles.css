@@ -1,0 +1,133 @@
+:root{
+    font-family: 'quicksand','san-serif';
+    width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color:#ffffff;
+
+
+}
+body{
+    margin: 0 !important;
+    background-color: white;
+    border: 1px solid #eee;
+}
+
+.page-container{
+
+}
+.nav{
+
+
+}
+nav{
+    display: flex;
+    background-color: #222222;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+nav .logo {
+    display: flex;
+    align-items: center;
+    
+}
+nav .logo img{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+nav .logo .title{
+    color: white;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+}
+nav ul li:hover{
+    background-color: #222222;
+}
+nav ul li{
+    background-color: #333333;
+    padding: 22px 44px;
+    color: white;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li.active{
+    background-color: #222222;
+}
+
+/* Tablets */
+
+@media all and (max-width:800px) {
+    nav{
+    justify-content: flex-start;
+    }
+    nav ul{
+        justify-content: space-between;
+        
+    }
+    
+}
+/* Phones */
+@media all and (max-width:600px){
+    nav{
+        align-items: center;
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+    nav ul li{
+        text-align: center;
+    }
+    
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    background-color: #333333;
+    background-image: url(https://source.unsplash.com/random/?noodles);
+    background-size: cover;
+    
+}
+.banner .heading{
+    flex: 1;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+}
+.banner .heading small{
+    font-size: 24px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #222222;
+    color: white;
+    padding: 24px;
+    text-align: center;
+    
+}
